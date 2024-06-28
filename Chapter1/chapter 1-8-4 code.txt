@@ -1,0 +1,27 @@
+SELECT
+	page_id,
+	referer,
+	ip_address
+FROM
+	access_log
+ORDER BY
+	access_date ASC
+LIMIT
+	10,0
+;
+
+・access_date ASCは昇順、つまり古い順なので誤り。正しくはDESCをつける
+・LIMIT	10,0は「10行目から0件分のアクセス記録」を表すため誤り。正しくは0,10である。
+
+SELECT
+	page_id,
+	referer,
+	ip_address
+FROM
+	access_log
+ORDER BY
+	access_date DESC
+LIMIT
+	/*日時の新しい先頭から10件分のアクセス記録*/
+	0,10
+;

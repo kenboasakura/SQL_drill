@@ -1,0 +1,13 @@
+SELECT
+	publish AS 出版社,
+	category_id AS 分類ID,
+	COUNT(isbn) AS 登録数
+FROM
+	books
+GROUP BY
+	publish,
+	category_id
+HAVING
+	/*3冊未満の登録数*/
+	COUNT(isbn) < 3
+;

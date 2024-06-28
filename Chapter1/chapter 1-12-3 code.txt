@@ -1,0 +1,11 @@
+SELECT
+	author_id AS 著者,
+	COUNT(isbn)AS 書籍数
+FROM
+	author_books
+GROUP BY
+	author_id
+HAVING
+		/*書籍の登録数が3冊以上*/
+	COUNT(isbn) >= 3
+;

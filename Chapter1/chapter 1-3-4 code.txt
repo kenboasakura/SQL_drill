@@ -1,0 +1,15 @@
+-- 訂正前
+SELECT ALL-- DISTINCTでないため重複してしまう
+	class,
+	depart_id-- 役職のみを探すためそもそもいらない
+FROM
+	employee
+;
+
+-- 訂正後
+SELECT DISTINCT
+	class
+FROM
+	employee
+;
+

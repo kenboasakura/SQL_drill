@@ -1,0 +1,8 @@
+SELECT
+	prefecture AS 都道府県,
+	COUNT(user_id) AS ユーザ数
+FROM
+	usr
+GROUP BY
+	prefecture
+;

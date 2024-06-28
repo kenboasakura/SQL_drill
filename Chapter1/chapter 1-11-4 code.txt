@@ -1,0 +1,9 @@
+SELECT
+	publish AS 出版社,
+	/*平均価格の小数点以下を切り捨てて表示*/
+	FLOOR(AVG(price))AS 平均価格
+FROM
+	books
+GROUP BY
+	publish
+;

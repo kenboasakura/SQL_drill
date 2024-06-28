@@ -1,0 +1,8 @@
+SELECT
+	user_id,
+	isbn
+FROM
+	rental
+WHERE
+	/*貸し出し中の情報であることを表す*/
+	returned = 0;

@@ -1,0 +1,11 @@
+SELECT
+	title,
+	publish_date
+FROM
+	books
+ORDER BY
+	publish_date DESC
+LIMIT
+	/*刊行日が新しい3件目から5件分の書籍*/
+	2,5
+;

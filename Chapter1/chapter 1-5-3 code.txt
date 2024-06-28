@@ -1,0 +1,10 @@
+SELECT
+	isbn,
+	title,
+	price
+FROM
+	books
+WHERE
+	/*タイトルがSQL〇〇(〇は一文字ずつを表す)である書籍*/
+	title LIKE 'SQL__'
+;

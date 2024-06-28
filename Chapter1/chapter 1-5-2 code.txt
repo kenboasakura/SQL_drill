@@ -1,0 +1,9 @@
+SELECT
+	name
+FROM
+	quest
+WHERE
+	/*名前が[子]で終わらない人を表す*/
+	name NOT LIKE '%子'
+;
+	

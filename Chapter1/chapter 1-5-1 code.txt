@@ -1,0 +1,8 @@
+SELECT
+	*
+FROM
+	author
+WHERE
+	/*名前が「山田」で始まる著者の情報*/
+	name LIKE '山田%' 
+;

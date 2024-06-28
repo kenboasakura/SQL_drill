@@ -1,0 +1,9 @@
+SELECT
+	prefecture,
+	/*評価の平均値を小数点以下を四捨五入して表示*/
+	ROUND(AVG(answer1),0)  AS  評価平均
+FROM
+	quest
+GROUP BY
+	prefecture
+;

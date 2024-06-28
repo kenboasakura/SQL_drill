@@ -1,0 +1,26 @@
+SELECT
+	prefecture,
+	sex,
+	age,
+	AVG(answer1) IS 評価平均
+FROM
+	quest
+GROUP BY
+	prefecture,
+	sex
+;
+
+・answer1 の後ろのISが意味不明であり、正しくはASである。
+・ageは年齢を求めるような命令が出されていないため不要である。
+
+
+SELECT
+	prefecture,
+	sex,
+	AVG(answer1) AS 評価平均
+FROM
+	quest
+GROUP BY
+	prefecture,
+	sex
+;

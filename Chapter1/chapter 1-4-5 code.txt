@@ -1,0 +1,10 @@
+SELECT
+	name,
+	answer1,
+	answer2
+FROM
+	quest
+WHERE
+	/*2013年1月1日以降の回答日時であることを表す*/
+	answered >= '2013-01-01'
+;

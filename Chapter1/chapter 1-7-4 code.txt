@@ -1,0 +1,24 @@
+SELECT
+	*
+FROM
+	access_log
+WHERE
+	access_date IN ('2013-01-01','2013-01-31')
+ORDER BY
+	referer, ip_address DESC
+;
+
+・INではなくBETWEENを用いる。修正前では1月1日と31日のデータしか取り出せない
+・refererのあとにDESCをつける必要がある。
+
+SELECT
+	*
+FROM
+	access_log
+WHERE
+	/*2013年1月中のアクセスデータを表す*/
+	access_date BETWEEN '2013-01-01' AND '2013-01-31'
+ORDER BY
+	referer DESC,
+	ip_address DESC
+;

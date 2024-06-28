@@ -1,0 +1,8 @@
+SELECT
+	publish AS 出版社,
+	AVG(price) AS 平均価格
+FROM
+	books
+GROUP BY
+	publish
+;

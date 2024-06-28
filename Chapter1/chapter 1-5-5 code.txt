@@ -1,0 +1,20 @@
+SELECT
+	title,
+FROM
+	books
+WHERE
+	/*社の前に任意の1文字が付いた出版社*/
+	publish LIKE '_社'
+;
+
+・titleの,は、1つしか選択を指定しないためいらない
+・_は任意の1文字しか付いた出版社しか含まないため命令に不適当である。'%社'の形にする
+
+SELECT
+	title
+FROM
+	books
+WHERE
+	/*名前が「～社」で終わる出版社*/
+	publish LIKE '%社'
+;

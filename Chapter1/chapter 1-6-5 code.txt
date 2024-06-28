@@ -1,0 +1,32 @@
+SELECT
+	isbn,
+	title
+FROM
+	books
+WHERE
+	publish = '秀和システム'
+	AND
+	publish = '日経BP'
+	OR
+	price < 3000
+;
+
+・ANDでつながずORでつないでから()でくくり、条件式をまとめる必要がある
+・「かつ」という命令文のはずがORでつないでしまっているため命令に不適当である
+
+SELECT
+	isbn,
+	title
+FROM
+	books
+WHERE
+	(
+		publish = '秀和システム'
+	OR
+		publish = '日経BP'
+	)
+	AND
+		/*値段が3000円未満*/
+		price < 3000
+;
+

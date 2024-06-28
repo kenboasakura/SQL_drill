@@ -1,0 +1,20 @@
+SELECT
+	page_id,
+	SUM(*)
+FROM
+	access_log
+ORDER BY
+	page_id
+;
+
+・SUM(*)だとIDを合計してしまうため誤り。正しくはCOUNT(*)にしてアクセス数の合計値を求める
+・ORDER BY だとソートする問う意味合いになるため誤り。正しくはGROUP BYにしてグループ化する
+
+SELECT
+	page_id,
+	COUNT(*)
+FROM
+	access_log
+GROUP BY
+	page_id
+;

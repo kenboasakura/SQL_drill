@@ -1,0 +1,9 @@
+SELECT
+	l_name,
+	f_name
+FROM
+	employee
+WHERE
+	/*「ア」から始まる社員の情報*/
+	l_name_kana LIKE 'ア%'
+;

@@ -1,0 +1,16 @@
+-- 訂正前
+SELECTS-- 複数形になっている
+	title-- コンマがついていない
+	publish
+FROM
+	books
+;
+
+
+-- 訂正後
+SELECT
+	title,
+	publish
+FROM
+	books
+;

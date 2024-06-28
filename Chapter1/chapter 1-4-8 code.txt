@@ -1,0 +1,24 @@
+-- 訂正前
+SELECT
+	title
+	publish
+	prise
+WHERE
+	/*5000円以下の値段であることを表す*/
+	price <= 5000
+;
+
+・titleとpublishの後に,がついていない
+・<=は以下を表す記号であり、問題の5000円未満という命令を満たしていない
+
+--訂正後
+SELECT
+	title,
+	publish,
+	price
+FROM
+	books
+WHERE
+	/*5000円未満のあることを表す*/
+	price < 5000
+;

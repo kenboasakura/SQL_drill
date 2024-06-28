@@ -1,0 +1,9 @@
+SELECT
+	answer2
+FROM
+	quest
+WHERE
+	/*回答欄がが未定義でない人を表す*/
+	answer2 IS NOT NULL
+;
+	
