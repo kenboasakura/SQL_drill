@@ -1,0 +1,14 @@
+SELECT
+	CONCAT(l_name,f_name) AS 社員氏名,
+	AVG(work_time) AS 勤務時間平均
+FROM
+	employee AS e
+LEFT JOIN
+	time_card AS t
+ON
+	e.s_id = t.s_id
+GROUP BY
+	CONCAT(l_name,f_name)
+ORDER BY
+	AVG(work_time) DESC
+;
