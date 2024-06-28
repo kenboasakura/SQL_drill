@@ -1,0 +1,8 @@
+INSERT INTO
+	depart
+VALUE
+	(
+		'E03',
+		'第三営業部'
+	)
+;

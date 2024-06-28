@@ -1,0 +1,14 @@
+DELETE FROM
+	books
+WHERE
+	isbn IN
+	(
+		SELECT
+			isbn
+		FROM
+			rental
+		WHERE
+			/*紛失状態である*/
+			returned = 9
+	)
+;

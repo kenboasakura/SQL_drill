@@ -1,0 +1,11 @@
+UPDATE
+	rental
+SET
+	/*紛失状態を表す*/
+	returned = 9
+WHERE
+		rental_date < '2012-03-31'
+	AND
+		/*現在貸し出し中である*/
+		returned = 0
+;

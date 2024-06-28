@@ -1,0 +1,13 @@
+DELETE FROM
+	sales
+WHERE
+	s_id NOT IN
+	(
+		SELECT
+			COUNT(s_id)= 0
+		FROM
+			shop
+		WHERE
+			shop.s_id = sales.s_id
+	)
+;

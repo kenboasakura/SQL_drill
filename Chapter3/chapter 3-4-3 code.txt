@@ -1,0 +1,6 @@
+UPDATE
+	product
+SET
+	/*元値より10%値上げした価格*/
+	price = price * 1.1 
+;

@@ -1,0 +1,16 @@
+・税込み価格に変更
+UPDATE
+	books
+SET
+	/*当時の消費税価格*/
+	price = price * 1.05
+;
+
+・税抜き価格に戻す
+UPDATE
+	books
+SET
+	isbn = CONCAT('ISBN',isbn),
+	/*当時の税抜き価格を表示*/
+	price = price / 1.05
+;

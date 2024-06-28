@@ -1,0 +1,36 @@
+INSERT INTO
+	employee
+	(
+		s_id
+		l_name
+		depart_id
+		last_update
+	)
+VALUE
+	(
+		'WA00001',
+		'和田',
+		'J01',
+		CURRENT_DATE
+	)
+;
+
+・列を変更する際に複数データを変更する際に,がついていない
+・VALUEではなく、VALUESである。
+
+INSERT INTO
+	employee
+	(
+		s_id,
+		l_name,
+		depart_id
+		last_update
+	)
+VALUES
+	(
+		'WA00001',
+		'和田',
+		'J01',
+		CURRENT_DATE
+	)
+;

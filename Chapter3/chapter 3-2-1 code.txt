@@ -1,0 +1,28 @@
+INSERT INTO
+	quest
+	(
+		id,
+		name,
+		name_kana,
+		sex,
+		prefecture,
+		age,
+		answer1,
+		answer2,
+		answered
+	)
+VALUES
+	(
+		/*佐々木さんのid*/
+		17,
+		'佐々木三郎',
+		'ササキサブロウ',
+		'男',
+		'東京都',
+		NULL,
+		/*評価をためになったと回答*/
+		3,
+		'興味深い内容です。',
+		CURRENT_TIME
+	)
+;

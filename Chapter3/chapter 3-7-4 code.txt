@@ -1,0 +1,18 @@
+DELETE
+	books
+WHERE
+	category_id = 'Z9999'
+AND
+	category_id IS NULL
+;
+
+・DELETEの後にFROMが付いていない
+・未分類であるかNULLであるかという命令に対してANDは不適切であり、ORをつけるべきである。
+
+DELETE FROM
+	books
+WHERE
+	category_id = 'Z9999'
+OR
+	category_id IS NULL
+;

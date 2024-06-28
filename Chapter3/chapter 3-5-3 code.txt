@@ -1,0 +1,8 @@
+UPDATE
+	books
+SET
+	/*10%オフの価格改定*/
+	price = price * 0.9
+WHERE
+	publish = '日経BP'
+;
