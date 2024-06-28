@@ -1,0 +1,21 @@
+・変更前
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| log_id      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| page_id     | char(5)      | YES  |     | NULL    |                |
+| referer     | varchar(255) | YES  |     | NULL    |                |
+| ip_address  | char(15)     | YES  |     | NULL    |                |
+| access_date | datetime     | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+
+・変更後
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| log_id      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| page_id     | char(5)      | YES  |     | NULL    |                |
+| referer     | varchar(200) | YES  |     | NULL    |                |
+| ip_address  | char(15)     | YES  |     | NULL    |                |
+| access_date | datetime     | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+

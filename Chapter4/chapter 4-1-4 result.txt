@@ -1,0 +1,10 @@
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| isbn         | char(17)     | NO   | PRI | NULL    |       |
+| title        | varchar(255) | NO   |     | NULL    |       |
+| price        | int(11)      | NO   |     | NULL    |       |
+| publish      | varchar(30)  | NO   |     | NULL    |       |
+| publish_date | date         | NO   |     | NULL    |       |
+| category_id  | char(5)      | NO   |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+

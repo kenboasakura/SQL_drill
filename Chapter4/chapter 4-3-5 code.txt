@@ -1,0 +1,18 @@
+ALTER TABLE
+	employee
+ADD TO
+	email VARCHAR(255) NOT NULL
+BEFORE
+	depart_id
+;
+
+・ADD TOのTOがいらない
+・BEFORE departidではなく、AFTER departidである。
+
+ALTER TABLE
+	employee
+ADD
+	email VARCHAR(255) NOT NULL
+AFTER
+	depart_id
+;

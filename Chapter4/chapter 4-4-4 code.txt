@@ -1,0 +1,14 @@
+ALTER TABLE
+	access_log
+MODIFY WITH
+	referer,VARCHAR(200),NULL
+;
+
+・MODIFY WITHのWITHがいらない
+・referer,VARCHAR(200),NULLのコンマはスペースである必要がある
+
+ALTER TABLE
+	access_log
+MODIFY
+	referer VARCHAR(200) NULL
+;
